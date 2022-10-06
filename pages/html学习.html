@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html入门</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .example {
+            color: orange;
+            font-size: 15px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>html元素介绍</h1>
+
+    <h2>&lt;head&gt;元素</h2>
+    <p>规定文档相关的配置信息（元数据），包括文档的标题，引用的文档样式和脚本等。</p>
+    <p class="example">&lt;head&gt;&lt;/head&gt;</p>
+    <hr>
+
+    <h2>&lt;meta&gt;文档级元数据元素</h2>
+    <p>元数据就是描述数据的数据</p>
+    <p class="example">&lt;meta charset="utf-8"&gt;</p>
+    <hr>
+    <h2>&lt;title&gt;标题元素</h2>
+    <p>定义文档的标题，显示在浏览器的标题栏或标签页上。它只应该包含文本，若是包含有标签，则它包含的任何标签都将被忽略。</p>
+    <p class="example">&lt;title&gt;html入门&lt;/title&gt;</p>
+    <hr>
+    <h2>&lt;link&gt;：外部资源链接元素</h2>
+    <p>元素最常用于链接样式表，此外也可以被用来创建站点图标</p>
+    <p class="example">&lt;link rel="icon" href="favicon.ico"&gt;</p>
+    <p class="example">&lt;link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-icon-114.png"
+        type="image/png""&gt;</p>
+    <p class="example">&lt;link href="print.css" rel="stylesheet" media="print"
+        &gt;</p>
+    <p class="example">&lt;link href="mobile.css" rel="stylesheet" media="screen and (max-width: 600px)"&gt;</p>
+    <p class="example">&lt;link rel="icon" href="favicon.ico"&gt;</p>
+    <p class="example">&lt;link href="main.css" rel="stylesheet"&gt;</p>
+    <hr>
+
+    <h2>&lt;body:文档主体元素&gt;</h2>
+    <p>body 元素表示文档的内容.document.body 属性提供了可以轻松访问文档的 body 元素的脚本。</p>
+    <p class="example" style="color: orange;">
+        <code>&lt;html&gt;<br></code>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;head&gt;<br></code>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <code>&lt;title&gt;Document title&lt;/title&gt;<br></code>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <code>&lt;/head&gt;<br></code>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <code>&lt;body&gt;<br></code>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <code>&lt;p>This is code&lt;/p&gt;<br></code>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;/body&gt;<br></code>
+        <code>&lt;/html&gt;<br></code>
+    </p>
+    <hr>
+
+    <h2>&lt;style样式元素&gt;</h2>
+    <p>包含文档的样式信息或者文档的部分内容。默认情况下，该标签的样式信息通常是CSS的格式。</p>
+    <p class="example">
+        &lt;head&gt;<br>
+        &lt;style&gt;<br>
+        p {
+        color: red;
+        }<br>
+        &lt;style&gt;<br>
+        &lt;head&gt;
+    </p>
+    <hr>
+    <h2>&lt;p元素&gt;</h2>
+    <p>表示文本的一个段落。该元素通常表现为一整块与相邻文本分离的文本，或以垂直的空白隔离或以首行缩进。另外，<b> 是块级元素。</b>
+    <p class="example">
+
+        &lt;p&gt;这是第一个段落。这是第一个段落。<br>
+        这是第一个段落。这是第一个段落。&lt;/p&gt;<br>
+        &lt;p&gt;这是第二个段落。这是第二个段落。<br>
+        这是第二个段落。这是第二个段落。&lt;/p&gt;br
+
+    </p>
+    <hr>
+    <h2>&lt;div&gt;内容划分元素</h2>
+
+    <p>作为一个“纯粹的”容器，&lt;div&gt;
+        元素在语义上不表示任何特定类型的内容。然而，其可以将内容分组，从而可以使用class或是id属性方便的定义内容的格式，也可以在一段文档中划分标记出使用另一种语言书写的内容（使用lang 属性）等等。</p>
+
+    <p class="example">
+        &lt;div&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &lt;p&gt;这里可以是任何内容，比如 &lt;p&gt;,
+        &lt;table&gt;，一切由你作主！&lt;/p&gt;<br>&lt;/div&gt;
+    </p>
+    <hr>
+    <h2>&lt;h1&gt;;&lt;h2&gt;;&lt;h3&gt;;&lt;h4&gt;;&lt;h5&gt;;&lt;h6&gt;标题元素</h2>
+    <p>标题 (Heading) 元素呈现了六个不同的级别的标题，&lt;h1&gt; 级别最高，而 &lt;h6&gt; 级别最低。</p>
+    <p class="example"></p>
+    <hr>
+
+    <h2>&lt;a&gt;锚元素</h2>
+    <p>可以通过它的 href 属性创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接。&lt;a&gt; 中的内容应该应该指明链接的意图。如果存在 href 属性，当 &lt;a&gt;
+        元素聚焦时按下回车键就会激活它。</p>
+    <p class="example">
+
+        &lt;a href="http://www.mozilla.com/"&gt;
+        External Link
+        &lt;/a&gt;
+    </p>
+    <hr>
+
+    <h2>&lt;span&gt;行内容器元素</h2>
+    <p>使用它来编组元素以达到某种样式意图（通过使用类或者 Id 属性），或者这些元素有着共同的属性，比如lang。应该在没有其他合适的语义元素时才使用它。&lt;span&gt; 与 &lt;div&gt; 元素很相似，但
+        &lt;div&gt;是一个 块元素 而 &lt;span&gt;
+        则是 行内元素</p>
+    <p class="example"></p>
+    <hr>
+
+    <h2>&lt;audio&gt;音频元素</h2>
+    <p>可以包含一个或多个音频资源，这些音频资源可以使用 src 属性或者source 元素来进行描述：浏览器将会选择最合适的一个来使用。也可以使用 MediaStream 将这个元素用于流式媒体。</p>
+    <p class="example">
+        &lt;audio controls&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &lt;source src="foo.opus" type="audio/ogg; codecs=opus" /&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &lt;source src="foo.ogg" type="audio/ogg; codecs=vorbis" /&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &lt;source src="foo.mp3" type="audio/mpeg" /&gt;<br>
+        &lt;/audio&gt;
+    </p>
+    <hr>
+
+    <h2>&lt;video&gt;媒体播放器元素</h2>
+    <p>用于支持文档内的视频播放。你也可以将 &lt;video&gt; 标签用于音频内容，但是 audio 元素可能在用户体验上更合适。</p>
+    <p class="example">
+        &lt;video controls&gt;<br>
+        &lt;source src="myVideo.mp4" type="video/mp4"&gt;<br>
+        &lt;source src="myVideo.webm" type="video/webm"&gt;<br>
+        &lt;p&gt;Your browser doesn't support HTML5 video. Here is
+        a &lt;a href="myVideo.mp4">link to the video&lt;/a&gt; instead.&lt;/p&gt;<br>
+        &lt;/video&gt;
+    </p>
+    <hr>
+
+    <h2>&lt;embed&gt;外部内容嵌入元素</h2>
+    <p>将外部内容嵌入文档中的指定位置。此内容由外部应用程序或其他交互式内容源（如浏览器插件）提供。</p>
+    <p class="example">&lt;embed type="video/quicktime" src="movie.mov" width="640" height="480"&gt;</p>
+    <hr>
+
+    <h2>&lt;img&gt;图像嵌入元素</h2>
+    <p>将一份图像嵌入文档。</p>
+    <p class="example">
+        &lt;img src="favicon144.png" alt="Visit the MDN site"&gt;
+    </p>
+    <hr>
+
+    <h2>&lt;svg&gt;文档片断元素</h2>
+    <p>svg 元素可以用于在当前文档（比如说，一个 HTML 文档）内嵌套一个独立的 svg 片段。这个独立片段拥有独立的视口和坐标系统。</p>
+    <p class="example">
+        <?xml version="1.0"?>
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="100" viewBox="0 0 3 2">
+
+            <rect width="1" height="2" x="0" fill="#008d46" />
+            <rect width="1" height="2" x="1" fill="#ffffff" />
+            <rect width="1" height="2" x="2" fill="#d2232c" />
+        </svg>
+        <br>
+
+        &lt;?xml version="1.0"?&gt;<br>
+        &lt;svg xmlns="http://www.w3.org/2000/svg" width="150" height="100" viewBox="0 0 3 2"&gt;<br>
+
+        &lt;rect width="1" height="2" x="0" fill="#008d46" /&gt;<br>
+        &lt;rect width="1" height="2" x="1" fill="#ffffff" /&gt;<br>
+        &lt;rect width="1" height="2" x="2" fill="#d2232c" /&gt;<br>
+        &lt;/svg&gt;
+    </p>
+    <hr>
+
+    <h2>&lt;canvas&gt;画布元素</h2>
+    <p>用来通过 JavaScript（Canvas API 或 WebGL API）绘制图形及图形动画。实现图形、线条和文字的显示。</p>
+    <p class="example">
+
+        &lt;canvas id="canvas" width="300" height="300"&gt;<br>
+        抱歉，您的浏览器不支持 canvas 元素
+        （这些内容将会在不支持&lt;canvas&gt;元素的浏览器或是禁用了 JavaScript 的浏览器内渲染并展现）<br>
+        &lt;/canvas&gt;<br>
+
+        <code>
+            JavaScript代码:<br>
+            var canvas = document.getElementById('canvas'); <br>
+            var ctx = canvas.getContext('2d'); <br> 
+            ctx.fillStyle = 'green'; <br>
+            ctx.fillRect(10, 10, 100, 100);<br>
+        </code>
+    </p>
+    <hr>
+
+    <h2>&lt;template&gt;内容模板元素</h2>
+    <p>一种用于保存客户端内容机制，该内容在加载页面时不会呈现，但随后可以 (原文为 may be) 在运行时使用 JavaScript 实例化。将模板视为一个可存储在文档中以便后续使用的内容片段。虽然解析器在加载页面时确实会处理
+        &lt;template&gt; 元素的内容，但这样做只是为了确保这些内容有效；但元素内容不会被渲染。</p>
+
+    <p class="example"></p>
+    <hr>
+
+    <h2>&lt;slot&gt;元素</h2>
+    <p>Web Components 技术套件的一部分，是 Web 组件内的一个占位符。该占位符可以在后期使用自己的标记语言填充，这样您就可以创建单独的 DOM 树，并将它与其它的组件组合在一起。</p>
+    <p class="example"></p>
+    <hr>
+</body>
+
+</html>
